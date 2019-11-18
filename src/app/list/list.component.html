@@ -1,0 +1,15 @@
+<p>list works!</p>
+<div *ngIf="products">
+  <table>
+    <tr>
+      <td>id</td>
+      <td>name</td>
+      <td>description</td>
+    </tr>
+    <tr *ngFor="let p of products">
+      <td>{{p.id}}</td>
+      <td>{{p.name}}</td>
+      <td>{{p.description}}</td>
+    </tr>
+  </table>
+</div>
